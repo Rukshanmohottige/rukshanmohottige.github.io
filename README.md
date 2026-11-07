@@ -1,4 +1,4 @@
-# 🌟 Rukshan Mohottige – Personal Portfolio & Direct WhatsApp System
+# 🌟 Rukshan Mohottige – Personal Portfolio
 
 A sleek, responsive, and modern personal developer portfolio tailored for **Rukshan Mohottige**.
 
