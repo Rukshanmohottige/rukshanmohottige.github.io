@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Rukshan Mohottige | Software Engineer</title>
+  <meta name="description" content="Portfolio of Rukshan Mohottige – Software Engineer specializing in Java, Spring Boot, Python, React, MySQL, Docker, and IoT healthcare solutions.">
+  <meta name="keywords" content="Rukshan Mohottige, Software Engineer, Java, Spring Boot, Python, React, MySQL, Docker, Sentinel Care, Employee Leave Management, Kandy Sri Lanka">
+  <meta name="author" content="Rukshan Mohottige">
+
+  <!-- OpenGraph / Social Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rukshan Mohottige | Software Engineer">
+  <meta property="og:description" content="Explore projects by Rukshan Mohottige: Sentinel Care IoT System, Employee Leave Management (Java/Spring Boot), Food Ordering Web App, and full-stack solutions.">
+  <meta property="og:image" content="a9fc67bf-c00a-443b-8a5e-d44693a40b8a.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Elements -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+  <div class="mouse-spotlight"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- =================================================================
+       NAVIGATION BAR
+       ================================================================= -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-brand">
+      <span class="nav-logo-badge">&lt;RM /&gt;</span>
+      <span>Rukshan<span class="gradient-text">.dev</span></span>
+    </a>
+
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme">
+        <i class="fa-solid fa-sun" id="theme-icon"></i>
+      </button>
+
+      <a href="23it0507__Rukshan.pdf" download="Rukshan_Mohottige_CV.pdf" class="btn btn-primary btn-sm nav-contact-btn">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span>Download CV</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close mobile navigation">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="drawer-nav-menu">
+      <li><a href="#hero" class="drawer-nav-link active">Home</a></li>
+      <li><a href="#about" class="drawer-nav-link">About</a></li>
+      <li><a href="#skills" class="drawer-nav-link">Skills</a></li>
+      <li><a href="#projects" class="drawer-nav-link">Projects</a></li>
+      <li><a href="#certifications" class="drawer-nav-link">Certifications</a></li>
+      <li><a href="#contact" class="drawer-nav-link">Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <a href="23it0507__Rukshan.pdf" download="Rukshan_Mohottige_CV.pdf" class="btn btn-primary" style="width: 100%;">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span>Download CV (PDF)</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- =================================================================
+       HERO SECTION
+       ================================================================= -->
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-content">
+            <div class="availability-pill">
+              <span class="pulse-dot"></span>
+              <span>Available for Software Engineering Roles &amp; Projects</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <br>
+              <span class="gradient-text">Rukshan Mohottige</span>
+            </h1>
+
+            <div class="hero-role">
+              <span>I build as a </span>
+              <span class="gradient-text" id="typing-text">Software Engineer</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-desc">
+              Dedicated Software Engineer with hands-on experience designing and building full-stack web applications, RESTful services, and database systems. Proficient in <strong>Java, Spring Boot, Python, React, and MySQL</strong> with practical experience in cloud sync, IoT health monitoring, and AI/ML.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="23it0507__Rukshan.pdf" download="Rukshan_Mohottige_CV.pdf" class="btn btn-primary">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download CV (PDF)</span>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <span>View Projects</span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Get In Touch</span>
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+
+            <!-- Social Media Quick Links -->
+            <div class="hero-socials">
+              <a href="https://github.com/Rukshanmohottige" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/rukshan-mohottige-587150202/" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/ruksha.n__/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100090129785737" target="_blank" rel="noopener noreferrer" class="social-pill" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="mailto:rukshanmohottige@gmail.com" class="social-pill" title="Email Me">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-container">
+              <img src="a9fc67bf-c00a-443b-8a5e-d44693a40b8a.png" alt="Rukshan Mohottige - Software Engineer" class="hero-img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         ABOUT SECTION
+         ================================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-user"></i>
+            <span>Professional Profile</span>
+          </div>
+          <h2 class="section-title">Driven by Engineering, <span class="gradient-text">Focused on Solutions</span></h2>
+          <p class="section-subtitle">Bridging strong theoretical computer science principles with practical software implementation.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Bio Narrative Card -->
+          <div class="about-card">
+            <p class="about-bio">
+              I am a Software Engineer with hands-on experience designing and building full-stack web applications, RESTful services, and database systems.
+            </p>
+            <p class="about-bio">
+              Proficient in <span class="highlight-text">Java, Spring Boot, Python, React, and MySQL</span>, with practical experience in cloud synchronization, IoT health monitoring, and AI/ML algorithms. I combine strong technical foundations with problem-solving abilities, adaptability, and collaborative teamwork.
+            </p>
+
+            <ul class="about-details-list">
+              <li class="about-detail-item">
+                <span class="detail-label">Full Name</span>
+                <span class="detail-value">Rukshan Mohottige</span>
+              </li>
+              <li class="about-detail-item">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Kandy, Sri Lanka</span>
+              </li>
+              <li class="about-detail-item">
+                <span class="detail-label">Primary Stack</span>
+                <span class="detail-value">Java, Spring Boot, Python, React, MySQL</span>
+              </li>
+              <li class="about-detail-item">
+                <span class="detail-label">Phone &amp; WhatsApp</span>
+                <span class="detail-value">+94 74 134 2646</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Statistics & Key Metrics Grid -->
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+              <div class="stat-label">Clean Code Quality</div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-number" data-target="4" data-suffix="+">4+</div>
+              <div class="stat-label">Professional Certifications</div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-number" data-target="3" data-suffix="+">3+</div>
+              <div class="stat-label">Production Core Projects</div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+              <div class="stat-label">Reliability &amp; Delivery</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SKILLS & TECH STACK (DIRECT FROM CV - PYTHON ONLY, NO FLUTTER)
+         ================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>Technical Skills</span>
+          </div>
+          <h2 class="section-title">Languages, Frameworks &amp; <span class="gradient-text">Tools</span></h2>
+          <p class="section-subtitle">Verified technical proficiencies across software engineering, architecture, and deployment.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Languages &amp; Backend</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="database">Databases &amp; Cloud</button>
+          <button class="filter-btn" data-filter="tools">Tools &amp; DevOps</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          
+          <!-- Java & Spring Boot -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #ea580c; background: rgba(234, 88, 12, 0.1);">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="skill-name">Java &amp; Spring Boot</div>
+            <p class="skill-desc">Enterprise backend development, Spring REST APIs, dependency injection, and scalable MVC architectures.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <!-- Python (Python Only) -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #3b82f6; background: rgba(59, 130, 246, 0.1);">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-name">Python</div>
+            <p class="skill-desc">Core Python programming, data structures, backend scripting, automation algorithms, and AI/ML data processing.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- React & JavaScript -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #00d4ff; background: rgba(0, 212, 255, 0.1);">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <span class="skill-percentage">86%</span>
+            </div>
+            <div class="skill-name">React &amp; JavaScript</div>
+            <p class="skill-desc">Single-page web applications, reusable components, DOM manipulation, state management, and modern ES6+.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <!-- PHP & Web Standards -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #777bb4; background: rgba(119, 123, 180, 0.1);">
+                <i class="fa-brands fa-php"></i>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-name">PHP, HTML5 &amp; CSS3</div>
+            <p class="skill-desc">Server-side rendering, session management, dynamic menu systems, and responsive web styling.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #00758f; background: rgba(0, 117, 143, 0.1);">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-name">MySQL &amp; MySQL Workbench</div>
+            <p class="skill-desc">Relational schema design, entity relationships, query optimization, foreign keys, and transaction management.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Firebase -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #f59e0b; background: rgba(245, 158, 11, 0.1);">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-name">Firebase &amp; Cloud Sync</div>
+            <p class="skill-desc">Real-time database handling, cloud data synchronization for IoT health wearables, and authentication.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Docker -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #0db7ed; background: rgba(13, 183, 237, 0.1);">
+                <i class="fa-brands fa-docker"></i>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-name">Docker</div>
+            <p class="skill-desc">Containerization, Dockerfile configuration, multi-container workflows, and isolated deployment environments.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Git, GitHub & Postman -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #f97316; background: rgba(249, 115, 22, 0.1);">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="skill-name">Git, GitHub &amp; Postman</div>
+            <p class="skill-desc">Version control, collaborative workflows, comprehensive REST API testing, and environment collections.</p>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         PROJECTS SHOWCASE (EXACT FROM CV)
+         ================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Featured Projects</span>
+          </div>
+          <h2 class="section-title">Key Engineering <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications and systems built during software engineering development.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Sentinel Care -->
+          <article class="project-card">
+            <div class="project-thumbnail">
+              <div class="mockup-header">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-yellow"></span>
+                <span class="mockup-dot dot-green"></span>
+              </div>
+              <span class="project-badge-tag" style="background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.5); color: #ef4444;">Final Year Project</span>
+              <svg viewBox="0 0 600 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="project-thumbnail-img" style="background: linear-gradient(135deg, #1f0d16 0%, #351323 100%);">
+                <defs>
+                  <linearGradient id="sc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ef4444"/>
+                    <stop offset="100%" stop-color="#f59e0b"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="300" cy="180" r="110" fill="url(#sc-grad)" opacity="0.2" filter="blur(30px)"/>
+                <rect x="70" y="50" width="460" height="260" rx="12" fill="#2a111e" stroke="rgba(239,68,68,0.3)" stroke-width="2"/>
+                <path d="M 90 180 L 170 180 L 190 120 L 215 240 L 235 140 L 255 200 L 275 180 L 510 180" fill="none" stroke="#ef4444" stroke-width="4"/>
+                <rect x="100" y="70" width="160" height="40" rx="6" fill="#3f192b"/>
+                <text x="115" y="95" fill="#f59e0b" font-size="12" font-family="sans-serif" font-weight="bold">AI RISK PREDICTION</text>
+                <rect x="340" y="70" width="160" height="40" rx="6" fill="#3f192b"/>
+                <text x="355" y="95" fill="#10b981" font-size="12" font-family="sans-serif" font-weight="bold">FIREBASE REALTIME</text>
+                <rect x="100" y="240" width="400" height="45" rx="8" fill="#3f192b"/>
+                <text x="120" y="268" fill="#ffffff" font-size="13" font-family="sans-serif">Sentinel Care: Smart Medical Wristband &amp; Wearable Health System</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sentinel Care: Smart Medical Wristband</h3>
+              <p class="project-desc">
+                An end-to-end wearable health monitoring system with cloud synchronization and real-time vital sign tracking. Features predictive analytics and risk-prediction algorithms implemented in Python to analyze vital parameters and trigger automated alerts.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python (Predictive Analytics)</span>
+                <span class="tech-tag">Firebase Cloud Sync</span>
+                <span class="tech-tag">IoT Wristband</span>
+                <span class="tech-tag">Automated Alerts</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Rukshanmohottige" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i class="fa-brands fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+              <a href="23it0507__Rukshan.pdf" target="_blank" class="project-link-btn" style="color: var(--accent-cyan);">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>See in CV</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Employee Leave Management System -->
+          <article class="project-card">
+            <div class="project-thumbnail">
+              <div class="mockup-header">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-yellow"></span>
+                <span class="mockup-dot dot-green"></span>
+              </div>
+              <span class="project-badge-tag" style="background: rgba(59, 130, 246, 0.2); border-color: rgba(59, 130, 246, 0.5); color: #3b82f6;">Java &amp; Spring Boot</span>
+              <svg viewBox="0 0 600 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="project-thumbnail-img" style="background: linear-gradient(135deg, #091a2e 0%, #102d4f 100%);">
+                <defs>
+                  <linearGradient id="elm-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#3b82f6"/>
+                    <stop offset="100%" stop-color="#00d4ff"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="300" cy="180" r="110" fill="url(#elm-grad)" opacity="0.18" filter="blur(30px)"/>
+                <rect x="70" y="50" width="460" height="260" rx="12" fill="#0d233e" stroke="rgba(59,130,246,0.3)" stroke-width="2"/>
+                <line x1="70" y1="95" x2="530" y2="95" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <circle cx="100" cy="73" r="5" fill="#ef4444"/>
+                <circle cx="115" cy="73" r="5" fill="#f59e0b"/>
+                <circle cx="130" cy="73" r="5" fill="#10b981"/>
+                <rect x="100" y="115" width="120" height="70" rx="6" fill="#14345c"/>
+                <text x="110" y="140" fill="#00d4ff" font-size="11" font-family="sans-serif" font-weight="bold">PENDING LEAVES</text>
+                <text x="110" y="170" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="bold">12</text>
+                <rect x="240" y="115" width="120" height="70" rx="6" fill="#14345c"/>
+                <text x="250" y="140" fill="#10b981" font-size="11" font-family="sans-serif" font-weight="bold">APPROVED</text>
+                <text x="250" y="170" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="bold">48</text>
+                <rect x="380" y="115" width="120" height="70" rx="6" fill="#14345c"/>
+                <text x="390" y="140" fill="#f59e0b" font-size="11" font-family="sans-serif" font-weight="bold">RECORDS</text>
+                <text x="390" y="170" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="bold">60</text>
+                <rect x="100" y="205" width="400" height="75" rx="6" fill="#112948"/>
+                <text x="115" y="235" fill="#94a3b8" font-size="12" font-family="sans-serif">REST APIs &amp; MySQL Workbench Schemas Tested via Postman</text>
+                <rect x="115" y="248" width="140" height="18" rx="4" fill="#3b82f6"/>
+                <text x="125" y="261" fill="#ffffff" font-size="10" font-family="sans-serif" font-weight="bold">Java + Spring Boot</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Employee Leave Management System</h3>
+              <p class="project-desc">
+                A scalable enterprise backend built using Java and Spring Boot to streamline employee leave requests, approval hierarchies, and records. Features robust RESTful APIs and normalized MySQL Workbench schemas comprehensively tested via Postman.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">MySQL Workbench</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Postman</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Rukshanmohottige" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i class="fa-brands fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+              <a href="23it0507__Rukshan.pdf" target="_blank" class="project-link-btn" style="color: var(--accent-cyan);">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>See in CV</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Food Ordering Web Application -->
+          <article class="project-card">
+            <div class="project-thumbnail">
+              <div class="mockup-header">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-yellow"></span>
+                <span class="mockup-dot dot-green"></span>
+              </div>
+              <span class="project-badge-tag" style="background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.5); color: #10b981;">Full-Stack Web</span>
+              <svg viewBox="0 0 600 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="project-thumbnail-img" style="background: linear-gradient(135deg, #0a1f1b 0%, #0e3831 100%);">
+                <defs>
+                  <linearGradient id="fo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#10b981"/>
+                    <stop offset="100%" stop-color="#00d4ff"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="300" cy="180" r="110" fill="url(#fo-grad)" opacity="0.18" filter="blur(30px)"/>
+                <rect x="70" y="50" width="460" height="260" rx="12" fill="#0d2e28" stroke="rgba(16,185,129,0.3)" stroke-width="2"/>
+                <rect x="100" y="105" width="120" height="135" rx="8" fill="#133d36"/>
+                <circle cx="160" cy="145" r="22" fill="#10b981"/>
+                <rect x="115" y="180" width="90" height="8" rx="3" fill="#cbd5e1"/>
+                <rect x="115" y="195" width="60" height="8" rx="3" fill="#10b981"/>
+                <rect x="240" y="105" width="120" height="135" rx="8" fill="#133d36"/>
+                <circle cx="300" cy="145" r="22" fill="#00d4ff"/>
+                <rect x="255" y="180" width="90" height="8" rx="3" fill="#cbd5e1"/>
+                <rect x="255" y="195" width="60" height="8" rx="3" fill="#00d4ff"/>
+                <rect x="380" y="105" width="120" height="135" rx="8" fill="#133d36"/>
+                <circle cx="440" cy="145" r="22" fill="#f59e0b"/>
+                <rect x="395" y="180" width="90" height="8" rx="3" fill="#cbd5e1"/>
+                <rect x="395" y="195" width="60" height="8" rx="3" fill="#f59e0b"/>
+                <rect x="100" y="255" width="400" height="35" rx="6" fill="#17483f"/>
+                <text x="120" y="277" fill="#ffffff" font-size="12" font-family="sans-serif">Menu Management &bull; Cart Processing &bull; Real-time Order Tracking</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Food Ordering Web Application</h3>
+              <p class="project-desc">
+                Dynamic web-based food ordering platform featuring interactive menu management, real-time shopping cart processing, checkout calculations, and order status tracking.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Rukshanmohottige" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i class="fa-brands fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+              <a href="23it0507__Rukshan.pdf" target="_blank" class="project-link-btn" style="color: var(--accent-cyan);">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>See in CV</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="https://github.com/Rukshanmohottige" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i>
+            <span>Explore All Repositories on GitHub</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         CERTIFICATIONS SECTION (EXACT FROM CV)
+         ================================================================= -->
+    <section class="section" id="certifications">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Professional Credentials</span>
+          </div>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">Verified professional credentials in AI/ML, Cloud Containers, JavaScript, and Machine Learning.</p>
+        </div>
+
+        <div class="certifications-grid">
+          
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="cert-title">AI/ML Engineer – Stage 1</h3>
+            <div class="cert-issuer">Centre for Open and Distance Education, SLIIT</div>
+            <div class="cert-badge">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Credential Verified</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="color: #0db7ed; background: rgba(13, 183, 237, 0.1);">
+              <i class="fa-brands fa-docker"></i>
+            </div>
+            <h3 class="cert-title">Getting Started with Docker</h3>
+            <div class="cert-issuer">Simplilearn</div>
+            <div class="cert-badge">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Credential Verified</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="color: #f7df1e; background: rgba(247, 223, 30, 0.1);">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <h3 class="cert-title">JavaScript Essentials 1</h3>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-badge">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Credential Verified</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-icon" style="color: #0056d2; background: rgba(0, 86, 210, 0.1);">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="cert-title">Fundamentals of Machine Learning and AI</h3>
+            <div class="cert-issuer">Coursera</div>
+            <div class="cert-badge">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Credential Verified</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         CONTACT SECTION (WITH SINGLE WHATSAPP ACTION BUTTON)
+         ================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's Connect &amp; <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-subtitle">Feel free to reach out for software engineering opportunities, projects, or inquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-card">
+            
+            <!-- Dedicated Single WhatsApp Card -->
+            <div class="contact-method" style="background: rgba(37, 211, 102, 0.08); padding: 20px; border-radius: 16px; border: 1px solid rgba(37, 211, 102, 0.3);">
+              <div class="contact-method-icon" style="color: #25D366; background: rgba(37, 211, 102, 0.18); border-color: rgba(37, 211, 102, 0.4);">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div style="flex-grow: 1;">
+                <div class="contact-method-title" style="color: #25D366;">WhatsApp Direct</div>
+                <div class="contact-method-val" style="font-size: 1.15rem;">+94 74 134 2646</div>
+                <a href="https://wa.me/94741342646" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" id="whatsapp-direct-btn" style="margin-top: 10px;">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <div class="contact-method-title">Email</div>
+                <div class="contact-method-val">rukshanmohottige@gmail.com</div>
+                <button class="copy-email-btn" id="copy-email-btn">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Copy email address</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-method">
+              <div class="contact-method-icon" style="color: #0a66c2; background: rgba(10, 102, 194, 0.1);">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <div class="contact-method-title">LinkedIn</div>
+                <div class="contact-method-val">
+                  <a href="https://www.linkedin.com/in/rukshan-mohottige-587150202/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); text-decoration: underline;">
+                    linkedin.com/in/rukshan-mohottige
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="contact-method">
+              <div class="contact-method-icon" style="color: #ffffff; background: rgba(255, 255, 255, 0.1);">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div>
+                <div class="contact-method-title">GitHub</div>
+                <div class="contact-method-val">
+                  <a href="https://github.com/Rukshanmohottige" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); text-decoration: underline;">
+                    github.com/rukshanmohottige
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-method">
+              <div class="contact-method-icon" style="color: #10b981; background: rgba(16, 185, 129, 0.1);">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="contact-method-title">Location</div>
+                <div class="contact-method-val">Kandy, Sri Lanka</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form (Directly forwards message to WhatsApp) -->
+          <div class="contact-form-card">
+            <form class="contact-form" id="contact-form">
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Contact / Email *</label>
+                <input type="text" id="email" name="email" class="form-input" placeholder="john@example.com or phone" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project / Software Engineering Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message *</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px 20px;">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-logo">
+          <span class="gradient-text">Rukshan Mohottige</span>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#hero" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#certifications" class="footer-link">Certifications</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+
+        <div class="hero-socials" style="margin-top: 0;">
+          <a href="https://github.com/Rukshanmohottige" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rukshan-mohottige-587150202/" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/94741342646" target="_blank" rel="noopener noreferrer" class="social-pill" title="WhatsApp" style="color: #25D366;">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/ruksha.n__/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100090129785737" target="_blank" rel="noopener noreferrer" class="social-pill" title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="mailto:rukshanmohottige@gmail.com" class="social-pill" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Rukshan Mohottige. All rights reserved. Software Engineer.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
